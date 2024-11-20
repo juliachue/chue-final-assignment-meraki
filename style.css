@@ -6,6 +6,7 @@
 body {
   background-color: #d2dda3;
   color: #2e765e;
+  font-family: "Playfair", serif;
 }
 /* header section */
 header {
@@ -15,12 +16,18 @@ header {
   background-image: url(images/Banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 header h1 {
   font-family: "Pacifico", cursive;
   font-size: 3rem;
   font-weight: 700;
+  font-style: normal;
+  text-shadow: 2px 2px #f7c5ce;
+}
+header h2 {
+  font-size: 2rem;
+  font-weight: 400;
   font-style: normal;
   text-shadow: 2px 2px #f7c5ce;
 }
@@ -40,24 +47,153 @@ header a {
   height: 50px;
   line-height: 50px;
   background-color: #2e765e;
-  color: #d2dda3;
+  color: #f7f6f4;
   margin: 10px auto 0;
   text-decoration: none;
   border-radius: 8px;
 }
 header a:hover {
   box-shadow: 3px 3px #fa4e71;
-  opacity: 1s;
+  transition: 1s;
+}
+/* navigation section */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: auto;
+  height: 120px;
+  margin: auto;
+  font-family: "Pacifico", cursive;
+  /* border: 1px solid #b23160; */
+  background: #2e765e;
+  opacity: 0.8;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+}
+.logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 20%;
+  margin-left: 70px;
+}
+nav ul {
+  display: flex;
+  gap: 50px;
+}
+nav ul li {
+  /* border: 1px solid #000; */
+  padding: 20px 20px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  list-style: none;
+  text-align: center;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-style: bold;
+  color: #f7f6f4;
+  padding: 5px 5px;
+  margin-bottom: 50px;
 }
 .icon-bar {
   background-color: #2e765e;
-  padding: 10px;
+  padding: 20px 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  gap: 30px;
 }
-
 .icon-bar i {
   color: white;
   font-size: 24px;
+}
+/* side-bar section */
+.side-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 20px;
+  width: auto;
+  height: 50px;
+  margin: auto;
+  /* border: 1px solid #b23160; */
+  background: #f05760;
+  opacity: 0.8;
+}
+.side-bar h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+.side-bar ul {
+  display: flex;
+  gap: 120px;
+  padding: 30px 30px;
+}
+.side-bar ul li {
+  /* border: 1px solid #000; */
+  padding: 20px 20px;
+  font-weight: 400;
+  margin: auto;
+  list-style: none;
+  text-align: center;
+}
+.side-bar ul li a {
+  text-decoration: underline;
+  font-size: 1.2rem;
+  font-style: bold;
+  color: white;
+  padding: 5px 5px;
+  margin-bottom: 50px;
+}
+/* classes section */
+#classes,
+footer {
+  /* border: 2px solid #000; */
+  width: 90%;
+  margin: 20px auto;
+  padding: 15px;
+}
+.menu {
+  text-align: center;
+}
+/* Amigurumi section */
+.menu h2 {
+  padding: 10px 0;
+  text-align: left;
+}
+.card {
+  border: 2px solid #2e765e;
+  width: 250px;
+  padding: 15px;
+  text-align: center;
+  background-color: #d2dda3;
+  font-family: "Playfair", serif;
+  border-radius: 8px;
+  display: inline-block;
+}
+.card-img-top {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.card-text {
+  padding: 10px 0;
+  line-height: 1.5rem;
+}
+.btn {
+  background-color: #2e765e;
+  color: white;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 10px;
 }
